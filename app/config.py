@@ -1,0 +1,25 @@
+REGION_IDS = [1, 2]
+PRINT_TIMINGS = True
+MINCONN = 1
+MAXCONN = 10
+API_KEY = ""
+DB_USER = ""
+DB_PASSWORD = ""
+BOT_TOKEN = ""
+SLACK_SIGNING_SECRET = b""
+BIGQUERY_PROJECT_ID = ""
+REDASH_URL = "https://redash.com/"
+JIRA_BASIC_AUTH = ("login", "pass")
+IDS_USERS_SLACK = {
+    "Alice": "",
+    "Bob": ""
+}
+IDS_USERS_PERMISSIONS_UPDATE = ["", "", "", ""]
+URL_GSHEET_LTV = 'https://docs.google.com/spreadsheets/'
+WORKSHEET_GSHEET_LTV = ""
+WORKSHEET_GSHEET_AOV = ""
+WORKSHEET_GSHEET_ORDERS = ""
+WORKSHEET_GSHEET_MARGIN = ""
+SERVICE_FILE_GSHEET_LTV = ''
+REDIS_HOST = ''
+REDIS_PORT = 6379

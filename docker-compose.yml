@@ -1,0 +1,15 @@
+services:
+  flask_app:
+    image: ${DOCKER_REGISTRY}/analytics/slackbot:latest
+    build: ./app
+    restart: unless-stopped
+    volumes:
+        - ./app/config.json:/app/config.json
+    command: gunicorn -w 1 -b 0.0.0.0:5000 --timeout 600 wsgi:app
+  nginx:
+      image: nameproject/flask-nginx:latest
+      restart: unless-stopped
+      ports:
+        - "80:80"
+      depends_on:
+        - flask_app
